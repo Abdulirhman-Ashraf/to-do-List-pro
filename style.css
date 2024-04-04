@@ -142,69 +142,6 @@ body.dark {
     
 }
 
-.aside {
-    margin: 0 80px 0 0px;
-}
-
-.sel {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    font-size: 25px;
-    cursor: pointer;
-    transition: all .2s linear;
-    border-radius: 20px;
-}
-
-.sel:hover {
-    background-color: rgba(137, 43, 226, 0.364);
-    color: aliceblue;
-}
-
-.aside2 {
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-around;
-}
-
-.sel2 {
-    padding: 0 30px;
-}
-
-.blue,
-.green,
-.red,
-.yellow {
-    display: inline-block;
-    margin: 10px;
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 25px;
-}
-
-.blue {
-    background-color: rgba(17, 0, 255, 0.366);
-}
-
-.red {
-    background-color: rgba(229, 2, 2, 0.456);
-}
-
-.green {
-    background-color: rgba(17, 198, 83, 0.594);
-
-}
-
-.yellow {
-    background-color: rgba(245, 229, 8, 0.592);
-}
-
-.box {
-    margin: 10px 0;
-    font-size: 20px;
-}
-
 .task {
     display:inline-block;
     width: 400px;
