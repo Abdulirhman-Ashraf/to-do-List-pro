@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header  -->
+      <div class="header">
+        <div class="logo">
+          <h1>
+            <a href="#"><img src="img\to-do-list.ico" alt="to-do list" /></a>
+          </h1>
+        </div>
+        <div class="mode" id="mode">
+          <h1></h1>
+        </div>
+      </div>
+      <div class="add" id="add"></div>
+
+      <div class="add" id="removeAll"></div>
+      <!-- section -->
+      <div class="section">
+        <!-- <div class="aside">
+          <div id="blue" class="sel">
+            <div class="blue"></div>
+            <p>work</p>
+          </div>
+          <div id="green" class="sel">
+            <div class="green"></div>
+            <p>study</p>
+          </div>
+          <div id="red" class="sel">
+            <div class="red"></div>
+            <p>entertaining</p>
+          </div>
+          <div id="yellow" class="sel">
+            <div class="yellow"></div>
+            <p>family</p>
+          </div>
+           <div class="box">
+            <input type="checkbox" name="hide" id="hide" />
+            <label for="hide">Hide Done Tasks</label>
+          </div> -->
+                  <div class="article " id="f"></div>
+        </div> 
+      <!-- section Two -->
+      <div class="sectionTwo">
+        <div class="btn">
+          <button id="cancel" type="button">Cancel</button>
+          <button id="save" type="button">Add</button>
+        </div>
+        <label for="title">Task</label>
+
+        <div class="title">
+          <input type="text" id="title" value="" placeholder="add a title" />
+        </div>
+
+        <label for="time">Time</label>
+
+        <div class="time">
+          <input
+            type="datetime-local"
+            id="time"
+            value=""
+            placeholder="add a description"
+          />
+        </div>
+        <!-- <div class="tag">
+          <h2>Tag</h2>
+          <div class="aside aside2">
+            <div class="first">
+              <div id="blue2" class="sel sel2">
+                <div class="blue"></div>
+                <p>work</p>
+              </div>
+              <div id="green2" class="sel sel2">
+                <div class="green"></div>
+                <p>study</p>
+              </div>
+            </div>
+
+            <div class="second">
+              <div id="red2"  class="sel sel2">
+                <div class="red"></div>
+                <p>entertaining</p>
+              </div>
+              <div id="yellow2" class="sel sel2">
+                <div class="yellow"></div>
+                <p>family</p>
+              </div>
+            </div>
+
+          </div>
+        </div> -->
+      </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="master.js"></script>
+  </body>
+</html>
