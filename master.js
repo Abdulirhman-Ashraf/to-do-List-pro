@@ -15,11 +15,14 @@ let tasksArray=[];
 // from local storage to array
 if (localStorage.tasks != null) {
   tasksArray = JSON.parse(localStorage.getItem("tasks"));
+  removeAll.style.display="block"
+
 }
 else{
-     tasksArray = [];
-}
+tasksArray = []
+removeAll.style.display="none"
 
+};
 
 
 add.addEventListener("click", function () {
@@ -87,31 +90,29 @@ mode.addEventListener("click", function () {
   mode.classList.toggle("darkMode");
 });
 // removeAll button
-if (localStorage.tasks == null) {
-  removeAll.style.display="none"
-}
+
 removeAll.addEventListener("click", function () {
+
   Swal.fire({
-    text: "You won't be able to revert this!",
-    icon: "warning",
+    text: "Delete All !",
     showCancelButton: true,
     confirmButtonColor: "rgba(84, 14, 154, 0.522)",
     cancelButtonColor: "#d33",
-    confirmButtonText: "Yes, delete it!",
+    confirmButtonText: "Yes",
   }).then((result) => {
     if (result.isConfirmed) {
       Swal.fire({
-        title:"Your file has been deleted.",
-        icon: "success",
+        title:"Your tasks has been deleted",
         confirmButtonColor: "rgba(84, 14, 154, 0.522)",
-
       });
       tasksArray.splice(0);
       localStorage.clear();
-      show();
+      show(); 
+      removeAll.style.display="none"
     }
   });
-});
+} 
+);
 // remove one task
 
 function remove(i){
