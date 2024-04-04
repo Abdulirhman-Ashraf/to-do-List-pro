@@ -115,6 +115,9 @@ function remove(i) {
   tasksArray.splice(i, 1);
   localStorage.setItem("tasks", JSON.stringify(tasksArray));
   show();
+    if (tasksArray.length== length) {
+    removeAll.style.display = "none";
+  } 
 }
 
 
