@@ -9,30 +9,16 @@ let mode = document.querySelector("#mode");
 let title = document.querySelector("#title");
 let time = document.querySelector("#time");
 let task = document.querySelector("#f");
-// let taskC = document.querySelector(".task");
-// let blue2 = document.querySelector("#blue2")
-// let red2 = document.querySelector("#red2")
-// let green2 = document.querySelector("#green2")
-// let yellow2 = document.querySelector("#yellow2")
-// let blue = document.querySelector("#blue")
-// let red = document.querySelector("#red")
-// let green = document.querySelector("#green")
-// let yellow = document.querySelector("#yellow")
-// let redTask = document.querySelector(".redT")
-// let blueTask = document.querySelector(".blueT")
-// let greenTask = document.querySelector(".greenT")
-// let yellowTask = document.querySelector(".yellowT")
-// array
+
 
 let tasksArray;
 // from local storage to array
-if (localStorage.tasks !== null) {
+if (localStorage.tasks != null) {
   tasksArray = JSON.parse(localStorage.getItem("tasks"));
 }
 else{
      tasksArray = [];
 }
-// tasksArray = [];
 
 
 
@@ -130,14 +116,4 @@ function remove(i){
   show();
 }
 
-// add class red
-// red2.addEventListener("click",function(){
-
-// })
-// red.addEventListener("click",function(){
-
-//   redTask.style.cssText = "background-color:red;"
-
-// }
-// ) 
 show();
