@@ -255,10 +255,15 @@ span {
     background-color: rgba(226, 150, 249, 0.897);
 
 }
-@media (max-width:464){
+@media (max-width:464px){
+    .sectionTwo {
+        width: 100%;
+        padding: 20px;
+        
+    }
     .task{
         width: 100%;
-        background-color: #bd6de2;
+        padding:40px 10px;
     }
 
 }
