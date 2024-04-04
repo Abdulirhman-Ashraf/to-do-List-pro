@@ -10,29 +10,27 @@ let title = document.querySelector("#title");
 let time = document.querySelector("#time");
 let task = document.querySelector("#f");
 
+// array
 
-let tasksArray=[];
+let tasksArray = [];
+
 // from local storage to array
 if (localStorage.tasks != null) {
   tasksArray = JSON.parse(localStorage.getItem("tasks"));
-  removeAll.style.display="block"
-
+  removeAll.style.display = "block";
+} else {
+  tasksArray = [];
+  removeAll.style.display = "none";
 }
-else{
-tasksArray = []
-removeAll.style.display="none"
 
-};
-
+//
 
 add.addEventListener("click", function () {
   add.style.cssText = "display:none;";
   removeAll.style.cssText = "display:none;";
-          sectionTwo.style.cssText = "display:block;";
-          section.style.cssText = "display:none;";
-          task.style.cssText = "display:none;";
-
-
+  sectionTwo.style.cssText = "display:block;";
+  section.style.cssText = "display:none;";
+  task.style.cssText = "display:none;";
 });
 
 save.addEventListener("click", function () {
@@ -42,7 +40,7 @@ save.addEventListener("click", function () {
       confirmButtonColor: " rgba(84, 14, 154, 0.522)",
     });
   } else {
-    let obj = {
+    obj = {
       title: title.value,
       time: time.value,
     };
@@ -90,9 +88,7 @@ mode.addEventListener("click", function () {
   mode.classList.toggle("darkMode");
 });
 // removeAll button
-
 removeAll.addEventListener("click", function () {
-
   Swal.fire({
     text: "Delete All !",
     showCancelButton: true,
@@ -102,23 +98,24 @@ removeAll.addEventListener("click", function () {
   }).then((result) => {
     if (result.isConfirmed) {
       Swal.fire({
-        title:"Your tasks has been deleted",
+        title: "Your tasks has been deleted",
         confirmButtonColor: "rgba(84, 14, 154, 0.522)",
       });
       tasksArray.splice(0);
       localStorage.clear();
-      show(); 
-      removeAll.style.display="none"
+      show();
+      removeAll.style.display = "none";
     }
   });
-} 
-);
+});
+
 // remove one task
 
-function remove(i){
-  tasksArray.splice(i,1);
+function remove(i) {
+  tasksArray.splice(i, 1);
   localStorage.setItem("tasks", JSON.stringify(tasksArray));
   show();
 }
+
 
 show();
