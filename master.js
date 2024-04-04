@@ -11,7 +11,7 @@ let time = document.querySelector("#time");
 let task = document.querySelector("#f");
 
 
-let tasksArray;
+let tasksArray=[];
 // from local storage to array
 if (localStorage.tasks != null) {
   tasksArray = JSON.parse(localStorage.getItem("tasks"));
@@ -78,7 +78,8 @@ cancel.addEventListener("click", function () {
   removeAll.style.cssText = "display:block;";
   document.body.style.cssText = "background-color:none;";
   task.style.cssText = "display:block;";
-
+  title.value = "";
+  time.value = "";
 });
 // dark mode
 mode.addEventListener("click", function () {
