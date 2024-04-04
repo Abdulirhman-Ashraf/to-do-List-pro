@@ -81,6 +81,9 @@ cancel.addEventListener("click", function () {
   task.style.cssText = "display:block;";
   title.value = "";
   time.value = "";
+    if (tasksArray.length== length) {
+    removeAll.style.display = "none";
+  } 
 });
 // dark mode
 mode.addEventListener("click", function () {
