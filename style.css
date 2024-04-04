@@ -109,6 +109,7 @@ body.dark {
 }
 
 #removeAll {
+        display: none;
     bottom: 150px;
     right: 20px;
 
