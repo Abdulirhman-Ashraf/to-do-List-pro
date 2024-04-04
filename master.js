@@ -87,6 +87,9 @@ mode.addEventListener("click", function () {
   mode.classList.toggle("darkMode");
 });
 // removeAll button
+if (localStorage.tasks == null) {
+  removeAll.style.display="none"
+}
 removeAll.addEventListener("click", function () {
   Swal.fire({
     text: "You won't be able to revert this!",
