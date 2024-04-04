@@ -106,7 +106,7 @@ removeAll.addEventListener("click", function () {
         confirmButtonColor: "rgba(84, 14, 154, 0.522)",
 
       });
-      tasksArray.splice(1);
+      tasksArray.splice(0);
       localStorage.clear();
       show();
     }
