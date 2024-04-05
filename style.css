@@ -25,7 +25,6 @@ body.dark {
    width: 90%;
    max-height: 100%;
     margin: 0 auto;
-    font-family: cursive;
     
 }
 .article{
@@ -215,7 +214,6 @@ span {
     height:50px;
     border: none;
     font-size: 20px;
-    font-family: cursive;
 
 }
 
@@ -267,7 +265,7 @@ span {
         padding:40px 10px;
     }
     .sectionTwo input {
-        height: 30px;
+        height: 40px;
 
     }
 }
