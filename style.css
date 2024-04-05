@@ -266,5 +266,8 @@ span {
         width: 100%;
         padding:40px 10px;
     }
+    .sectionTwo input {
+        height: 30px;
 
+    }
 }
