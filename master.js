@@ -93,7 +93,7 @@ mode.addEventListener("click", function () {
 // removeAll button
 removeAll.addEventListener("click", function () {
   Swal.fire({
-    text: "Delete All !",
+    text: "Delete All ?",
     showCancelButton: true,
     confirmButtonColor: "rgba(84, 14, 154, 0.522)",
     cancelButtonColor: "#d33",
