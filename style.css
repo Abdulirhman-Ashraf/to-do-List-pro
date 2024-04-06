@@ -157,7 +157,7 @@ body.dark {
     background-color: rgba(237, 221, 221, 0.248);
     border: 1px solid rgb(84, 14, 154);
     position: relative;
-    backdrop-filter:blur(1px)
+    backdrop-filter:blur(.4px)
 
 }
 
@@ -204,7 +204,7 @@ span {
     border-radius: 20px;
     border: 1px solid rgba(84, 14, 154, 0.311);
     background-color: rgba(237, 221, 221, 0.385);
-    backdrop-filter:blur(1px)
+    backdrop-filter:blur(.4px)
 }
 
 .btn {
@@ -225,6 +225,8 @@ span {
 
 #cancel {
     background-color: rgba(133, 2, 255, 0);
+    color: aliceblue;
+
 }
 
 #save {
