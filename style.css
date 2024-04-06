@@ -7,13 +7,16 @@
 
 body {
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    
     color: rgba(0, 0, 0, 0.891);
     background-image: url("img/bg.png");
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100% ;
+    font-family: "Amiri", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 body.dark {
@@ -108,7 +111,7 @@ body.dark {
 }
 
 #removeAll {
-        display: none;
+    display: none;
     bottom: 150px;
     right: 20px;
 
@@ -139,8 +142,9 @@ body.dark {
 .section {
     display: flex;
     justify-content: start;
-    
+
 }
+
 
 .task {
     display:inline-block;
@@ -149,16 +153,18 @@ body.dark {
     padding: 40px;
     border-radius: 20px;
     margin: 10px;
-    color: #bd6de2;
-    background-color: rgb(255, 230, 157);
-    border: 1px solid rgba(84, 14, 154, 0.522);
+    color: #a658cac4;
+    background-color: rgba(237, 221, 221, 0.248);
+    border: 1px solid rgb(84, 14, 154);
     position: relative;
+    backdrop-filter:blur(1px)
 
 }
 
 .task h2 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 25px; 
+
     text-transform: capitalize;
     margin-bottom: 10px;
 
@@ -196,9 +202,9 @@ span {
     padding: 40px;
     margin:10px auto;
     border-radius: 20px;
-    border: 1px solid rgba(84, 14, 154, 0.757);
-    background-color: rgba(237, 221, 221, 0.186);
-    backdrop-filter: ("2px");
+    border: 1px solid rgba(84, 14, 154, 0.311);
+    background-color: rgba(237, 221, 221, 0.385);
+    backdrop-filter:blur(1px)
 }
 
 .btn {
@@ -213,7 +219,7 @@ span {
     width: 100px;
     height:50px;
     border: none;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
@@ -229,8 +235,8 @@ span {
 
 #cancel:hover,
 #save:hover {
-    background-color: rgba(203, 165, 208, 0.547);
-    border-radius: 30px;
+    background-color: rgba(205, 63, 224, 0.85);
+    border-radius: 20px;
 
 }
 
@@ -240,7 +246,7 @@ span {
 
 .sectionTwo input {
     width: 100%;
-   height: 70px;
+    height: 50px;
     border: none;
     outline: none;
     background-color: rgba(214, 148, 234, 0.504);
