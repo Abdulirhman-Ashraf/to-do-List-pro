@@ -8,7 +8,7 @@
 body {
     background-color: white;
 
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.891);
     background-image: url("img/bg.png");
     background-attachment: fixed;
     background-size: contain;
@@ -149,18 +149,17 @@ body.dark {
 
 .task {
     display: inline-block;
-    width: 400px;
+    width: 340px;
     height: fit-content;
     padding: 40px;
     border-radius: 20px;
-    margin: 20px;
+    margin: 10px;
     color: #a658cac4;
     background-color: rgba(237, 221, 221, 0.039);
     border: 1px solid rgb(84, 14, 154);
     position: relative;
-    backdrop-filter: blur(.4px);
+    backdrop-filter: blur(2px);
     overflow: hidden;
-    text-overflow: ellipsis;
     transition: all linear 1s;
 }
 
@@ -213,7 +212,7 @@ span {
     border-radius: 20px;
     border: 1px solid rgba(84, 14, 154, 0.311);
     background-color: rgba(237, 221, 221, 0.036);
-    backdrop-filter: blur(.4px)
+    backdrop-filter: blur(3px);
 }
 
 .btn {
@@ -296,7 +295,6 @@ textarea:hover {
         width: 100%;
         padding: 40px 10px;
         color: inherit;
-
     }
 
     .sectionTwo input {
