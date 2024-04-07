@@ -156,7 +156,7 @@ body.dark {
     margin: 10px;
     color: #b572d4d0;
     background-color: rgba(255, 255, 255, 0.077);
-    border: 1px solid rgb(84, 14, 154);
+    border: .1px solid rgba(84, 14, 154, 0.3);
     position: relative;
     overflow: hidden;
     transition: all linear .5s;
