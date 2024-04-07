@@ -154,7 +154,7 @@ body.dark {
     padding: 40px;
     border-radius: 20px;
     margin: 10px;
-    color: #a658cac4;
+    color: #b572d4d0;
     background-color: rgba(255, 255, 255, 0.077);
     border: 1px solid rgb(84, 14, 154);
     position: relative;
@@ -163,7 +163,7 @@ body.dark {
 }
 
 .task:hover {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(9px);
 
     overflow: auto;
 
@@ -171,8 +171,8 @@ body.dark {
 
 .task h2 {
     font-weight: 700;
-    font-size: 25px;
-
+    font-size: 33px;
+    font-weight: bold;
     text-transform: capitalize;
     margin-bottom: 10px;
 
@@ -284,6 +284,8 @@ textarea {
     border: none;
     outline: none;
     border-radius: 10px;
+    font-size: 28px;
+
 }
 
 textarea:hover {
