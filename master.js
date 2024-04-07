@@ -71,8 +71,8 @@ function show() {
   for (let i = 0; i < tasksArray.length; i++) {
     task.innerHTML += `   
   <div class="task">
-    <h2>${tasksArray[i].title}</h2>
-    <p>${tasksArray[i].notes}</p>
+    <h1>${tasksArray[i].title}</h1>
+    <h2>${tasksArray[i].notes}</h2>
     <h2>${tasksArray[i].time}</h2>
 
 <span onclick=remove(${i})>Remove</span>
