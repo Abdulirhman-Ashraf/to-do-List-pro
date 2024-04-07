@@ -294,6 +294,8 @@ textarea:hover {
     .task {
         width: 100%;
         padding: 40px 10px;
+        color: inherit;
+
     }
 
     .sectionTwo input {
