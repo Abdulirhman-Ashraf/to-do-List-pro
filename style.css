@@ -7,15 +7,16 @@
 
 body {
     background-color: white;
-    
+
     color: rgba(0, 0, 0, 0.891);
     background-image: url("img/bg.png");
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 100% ;
+    background-position: 100%;
     font-family: "Amiri", serif;
     font-weight: 400;
+    font-style: italic;
 }
 
 body.dark {
@@ -24,15 +25,17 @@ body.dark {
 }
 
 .container {
-   width: 90%;
-   max-height: 100%;
+    width: 90%;
+    max-height: 100%;
     margin: 0 auto;
-    
+
 }
-.article{
+
+.article {
     width: 90%;
 
 }
+
 .logo img {
     width: 100px;
 }
@@ -146,23 +149,31 @@ body.dark {
 
 
 .task {
-    display:inline-block;
+    display: inline-block;
     width: 400px;
     height: fit-content;
     padding: 40px;
     border-radius: 20px;
-    margin: 10px;
+    margin: 20px;
     color: #a658cac4;
     background-color: rgba(237, 221, 221, 0.248);
     border: 1px solid rgb(84, 14, 154);
     position: relative;
-    backdrop-filter:blur(.4px)
+    backdrop-filter: blur(.4px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all linear 1s;
+}
+
+.task:hover {
+
+    overflow: auto;
 
 }
 
 .task h2 {
     font-weight: 700;
-    font-size: 25px; 
+    font-size: 25px;
 
     text-transform: capitalize;
     margin-bottom: 10px;
@@ -199,11 +210,11 @@ span {
     width: 60%;
     height: 10%;
     padding: 40px;
-    margin:10px auto;
+    margin: 10px auto;
     border-radius: 20px;
     border: 1px solid rgba(84, 14, 154, 0.311);
     background-color: rgba(237, 221, 221, 0.385);
-    backdrop-filter:blur(.4px)
+    backdrop-filter: blur(.4px)
 }
 
 .btn {
@@ -216,7 +227,7 @@ span {
 #cancel,
 #save {
     width: 100px;
-    height:50px;
+    height: 50px;
     border: none;
     font-size: 30px;
 
@@ -224,7 +235,7 @@ span {
 
 #cancel {
     background-color: rgba(133, 2, 255, 0);
-    color: white;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -236,7 +247,7 @@ span {
 
 #cancel:hover,
 #save:hover {
-    background-color: rgba(205, 63, 224, 0.85);
+    background-color: rgba(205, 63, 224, 0.357);
     border-radius: 20px;
 
 }
@@ -251,7 +262,7 @@ span {
     border: none;
     outline: none;
     background-color: rgba(214, 148, 234, 0.504);
-    margin: 20px 0  ;
+    margin: 20px 0;
     border-radius: 10px;
     padding: 10px;
     font-size: 25px;
@@ -261,18 +272,36 @@ span {
     background-color: rgba(226, 150, 249, 0.897);
 
 }
-@media (max-width:464px){
+
+textarea {
+    width: 100%;
+    background-color: rgba(226, 150, 249, 0.472);
+    white-space: pre-wrap;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+textarea:hover {
+    background-color: rgba(226, 150, 249, 0.727)!important;
+}
+
+@media (max-width:464px) {
     .sectionTwo {
         width: 100%;
         padding: 20px;
-        
+
     }
-    .task{
+
+    .task {
         width: 100%;
-        padding:40px 10px;
+        padding: 40px 10px;
     }
+
     .sectionTwo input {
         height: 40px;
 
     }
+
+
 }

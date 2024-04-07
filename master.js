@@ -7,13 +7,15 @@ let cancel = document.querySelector("#cancel");
 let save = document.querySelector("#save");
 let mode = document.querySelector("#mode");
 let title = document.querySelector("#title");
+let notes = document.querySelector("#notes");
 let time = document.querySelector("#time");
 let task = document.querySelector("#f");
-
+let taskR = document.querySelector(".task");
+let  taskH2 = document.querySelector(".task h2");
+let done = document.querySelector("#done");
+let red = document.querySelector("#red");
 // array
-
 let tasksArray = [];
-
 // from local storage to array
 if (localStorage.tasks != null) {
   tasksArray = JSON.parse(localStorage.getItem("tasks"));
@@ -24,7 +26,9 @@ if (localStorage.tasks != null) {
 }
 
 //
-
+if (tasksArray.length== length) {
+  removeAll.style.display = "none";
+} 
 add.addEventListener("click", function () {
   add.style.cssText = "display:none;";
   removeAll.style.cssText = "display:none;";
@@ -42,6 +46,7 @@ save.addEventListener("click", function () {
   } else {
     obj = {
       title: title.value,
+      notes: notes.value ,
       time: time.value,
     };
     tasksArray.push(obj);
@@ -55,6 +60,7 @@ save.addEventListener("click", function () {
     task.style.cssText = "display:inline-block;";
 
     title.value = "";
+    notes.value = "";
     time.value = "";
   }
 });
@@ -64,13 +70,16 @@ function show() {
 
   for (let i = 0; i < tasksArray.length; i++) {
     task.innerHTML += `   
-  <div class="task redT">
+  <div class="task">
     <h2>${tasksArray[i].title}</h2>
+    <p>${tasksArray[i].notes}</p>
     <h2>${tasksArray[i].time}</h2>
+
 <span onclick=remove(${i})>Remove</span>
   </div>`;
   }
 }
+
 // cancel button
 cancel.addEventListener("click", function () {
   sectionTwo.style.cssText = "display:none;";
@@ -81,7 +90,10 @@ cancel.addEventListener("click", function () {
   task.style.cssText = "display:block;";
   title.value = "";
   time.value = "";
-    if (tasksArray.length== length) {
+  notes.value = "";
+
+
+  if (tasksArray.length== length) {
     removeAll.style.display = "none";
   } 
 });
@@ -117,11 +129,11 @@ removeAll.addEventListener("click", function () {
 function remove(i) {
   tasksArray.splice(i, 1);
   localStorage.setItem("tasks", JSON.stringify(tasksArray));
-  show();
-    if (tasksArray.length== length) {
+    show();
+
+  if (tasksArray.length== length) {
     removeAll.style.display = "none";
   } 
 }
-
 
 show();

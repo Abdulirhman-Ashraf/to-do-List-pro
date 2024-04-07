@@ -8,6 +8,7 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap')
 </style>
+
   </head>
   <body>
     <div class="container">
@@ -27,8 +28,28 @@
       <div class="add" id="removeAll"></div>
       <!-- section -->
       <div class="section">
-
-         <div class="article " id="f"></div>
+        <!-- <div class="aside">
+          <div id="blue" class="sel">
+            <div class="blue"></div>
+            <p>work</p>
+          </div>
+          <div id="green" class="sel">
+            <div class="green"></div>
+            <p>study</p>
+          </div>
+          <div id="red" class="sel">
+            <div class="red"></div>
+            <p>entertaining</p>
+          </div>
+          <div id="yellow" class="sel">
+            <div class="yellow"></div>
+            <p>family</p>
+          </div>
+           <div class="box">
+            <input type="checkbox" name="hide" id="hide" />
+            <label for="hide">Hide Done Tasks</label>
+          </div> -->
+                  <div class="article " id="f"></div>
         </div> 
       <!-- section Two -->
       <div class="sectionTwo">
@@ -36,10 +57,16 @@
           <button id="cancel" type="button">Cancel</button>
           <button id="save" type="button">Add</button>
         </div>
-        <label for="title">Task</label>
+        <label for="title">My Task</label>
 
         <div class="title">
-          <input type="text" id="title" value="" placeholder="add a title" />
+          <input type="text"  id="title"/>
+        </div>
+
+        <label for="notes">Notes</label>
+
+        <div class="notes">
+          <textarea  id="notes" cols="42" rows="10"style= " padding: 10px"></textarea>
         </div>
 
         <label for="time">Time</label>
@@ -48,11 +75,8 @@
           <input
             type="datetime-local"
             id="time"
-            value=""
-            placeholder="add a description"
           />
         </div>
-
       </div>
       </div>
 
